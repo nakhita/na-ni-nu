@@ -1,0 +1,420 @@
+[
+  {
+    "id": 1,
+    "seccion": "libreria",
+    "categoria": "archivo",
+    "nombre": "Folio A4",
+    "precio": 300,
+    "descripcion": "Folio transparente tamaño A4, ideal para proteger documentos, apuntes y trabajos.",
+    "imagen": "/imagenes/libreria/folio-a4.jpeg"
+  },
+  {
+    "id": 2,
+    "seccion": "libreria",
+    "categoria": "archivo",
+    "nombre": "Folio Oficio",
+    "precio": 400,
+    "descripcion": "Folio transparente tamaño oficio para proteger y organizar documentación.",
+    "imagen": "/imagenes/libreria/folio-oficio.jpeg"
+  },
+  {
+    "id": 3,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Lapicera",
+    "precio": 1000,
+    "descripcion": "Lapicera de uso diario disponible en color negro, azul y rojo.",
+    "imagen": "/imagenes/libreria/lapicera-azul.jpeg"
+  },
+  {
+    "id": 4,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Resaltador",
+    "precio": 2000,
+    "descripcion": "Resaltador ideal para destacar textos, apuntes y material de estudio.",
+    "imagen": "/imagenes/libreria/resaltador.jpeg"
+  },
+  {
+    "id": 5,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Corrector",
+    "precio": 2000,
+    "descripcion": "Corrector para cubrir errores de escritura de manera rápida y prolija.",
+    "imagen": "/imagenes/libreria/liqui.jpeg"
+  },
+  {
+    "id": 6,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Lápiz",
+    "precio": 500,
+    "descripcion": "Lápiz ideal para escritura, dibujo y uso escolar.",
+    "imagen": "/imagenes/libreria/lapiz.jpeg"
+  },
+  {
+    "id": 7,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Goma",
+    "precio": 800,
+    "descripcion": "Goma de borrar para lápiz, ideal para uso escolar y de oficina.",
+    "imagen": "/imagenes/libreria/goma.jpeg"
+  },
+  {
+    "id": 8,
+    "seccion": "libreria",
+    "categoria": "adhesivos",
+    "nombre": "Cinta de papel",
+    "precio": 5000,
+    "descripcion": "Cinta de papel para trabajos escolares, manualidades, pintura y embalaje liviano.",
+    "imagen": "/imagenes/libreria/cinta-papel.jpeg"
+  },
+  {
+    "id": 9,
+    "seccion": "libreria",
+    "categoria": "anotador",
+    "nombre": "Anotador Autoadhesivo",
+    "precio": 3500,
+    "descripcion": "Anotador práctico para notas, recordatorios y organización diaria.",
+    "imagen": "/imagenes/libreria/anotador-adhesivo.jpeg"
+  },
+  {
+    "id": 10,
+    "seccion": "libreria",
+    "categoria": "anotador",
+    "nombre": "Fichas N°3",
+    "precio": 6500,
+    "descripcion": "Fichas N°3 ideales para estudio, resúmenes y organización de información.",
+    "imagen": "/imagenes/libreria/anotador-n3.jpeg"
+  },
+  {
+    "id": 11,
+    "seccion": "libreria",
+    "categoria": "anotador",
+    "nombre": "Fichas N°2",
+    "precio": 5000,
+    "descripcion": "Fichas N°2 para anotaciones, resúmenes y material de estudio.",
+    "imagen": "/imagenes/libreria/anotador-n2.jpeg"
+  },
+  {
+    "id": 12,
+    "seccion": "libreria",
+    "categoria": "cuadernos",
+    "nombre": "Cuaderno Universitario",
+    "precio": 4000,
+    "descripcion": "Cuaderno universitario x84 hojas. Rayado y cuadriculado",
+    "imagen": "/imagenes/libreria/cuaderno-universitario.jpeg"
+  },
+  {
+    "id": 13,
+    "seccion": "libreria",
+    "categoria": "adhesivos",
+    "nombre": "Cinta 18x30",
+    "precio": 1500,
+    "descripcion": "Cinta adhesiva de 18x30 para tareas escolares, oficina y uso general.",
+    "imagen": "/imagenes/libreria/cinta-chica.jpeg"
+  },
+  {
+    "id": 14,
+    "seccion": "libreria",
+    "categoria": "adhesivos",
+    "nombre": "Cinta 24x60",
+    "precio": 2000,
+    "descripcion": "Cinta adhesiva de 24x60 para uso escolar, oficina y trabajos generales.",
+    "imagen": "/imagenes/libreria/cinta-mediana.jpeg"
+  },
+  {
+    "id": 15,
+    "seccion": "libreria",
+    "categoria": "adhesivos",
+    "nombre": "Cinta de embalar",
+    "precio": 4000,
+    "descripcion": "Cinta adhesiva resistente para cerrar cajas, paquetes y embalajes.",
+    "imagen": "/imagenes/libreria/cinta-embalar.jpeg"
+  },
+  {
+    "id": 16,
+    "seccion": "libreria",
+    "categoria": "hojas",
+    "nombre": "Repuesto Rivadavia",
+    "precio": 8000,
+    "descripcion": "Repuesto de hojas Rivadavia x96 hojas para carpeta rayado y cuadriculada, ideal para uso escolar.",
+    "imagen": "/imagenes/libreria/hoja-n3-rayada.jpeg"
+  },
+  {
+    "id": 17,
+    "seccion": "libreria",
+    "categoria": "adhesivos",
+    "nombre": "Barra Adhesiva",
+    "precio": 2500,
+    "descripcion": "Adhesivo en barra para papel, cartulina y trabajos escolares.",
+    "imagen": "/imagenes/libreria/barra-adhesiva.jpeg"
+  },
+  {
+    "id": 18,
+    "seccion": "libreria",
+    "categoria": "archivo",
+    "nombre": "Carpeta 3 Solapas",
+    "precio": 3000,
+    "descripcion": "Carpeta tamaño oficio para guardar y organizar documentación.",
+    "imagen": "/imagenes/libreria/carpeta-3-solapas.jpeg"
+  },
+  {
+    "id": 19,
+    "seccion": "libreria",
+    "categoria": "archivo",
+    "nombre": "Carpeta Presentación",
+    "precio": 1500,
+    "descripcion": "Carpeta de presentación para trabajos, documentación y entregas.",
+    "imagen": "/imagenes/libreria/carpeta-presentacion.jpeg"
+  },
+  {
+    "id": 20,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Sacapuntas",
+    "precio": 400,
+    "descripcion": "Sacapuntas compacto para lápices de uso escolar y cotidiano.",
+    "imagen": "/imagenes/libreria/sacapuntas.jpeg"
+  },
+  {
+    "id": 21,
+    "seccion": "libreria",
+    "categoria": "herramientas",
+    "nombre": "Tijera",
+    "precio": 3500,
+    "descripcion": "Tijera para papel, cartulina y trabajos escolares.",
+    "imagen": "/imagenes/libreria/tijera.jpeg"
+  },
+  {
+    "id": 22,
+    "seccion": "libreria",
+    "categoria": "herramientas",
+    "nombre": "Regla",
+    "precio": 1000,
+    "descripcion": "Regla para medición, dibujo técnico y uso escolar.",
+    "imagen": "/imagenes/libreria/regla.jpeg"
+  },
+  {
+    "id": 23,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Marcador Permanente",
+    "precio": 1500,
+    "descripcion": "Marcador permanente para escritura sobre distintas superficies.",
+    "imagen": "/imagenes/libreria/fibron.jpeg"
+  },
+  {
+    "id": 24,
+    "seccion": "libreria",
+    "categoria": "escritura",
+    "nombre": "Microfibra Doble",
+    "precio": 2000,
+    "descripcion": "Microfibra de doble punta para escritura, detalles y trabajos creativos.",
+    "imagen": "/imagenes/libreria/microfibra-doble.jpeg"
+  },
+  {
+    "id": 25,
+    "seccion": "libreria",
+    "categoria": "papeles",
+    "nombre": "Papel Crepé",
+    "precio": 1000,
+    "descripcion": "Papel crepé ideal para manualidades, decoración y trabajos escolares.",
+    "imagen": "/imagenes/libreria/papel-crepe.jpeg"
+  },
+  {
+    "id": 26,
+    "seccion": "libreria",
+    "categoria": "papeles",
+    "nombre": "Papel Afiche",
+    "precio": 1500,
+    "descripcion": "Papel afiche para cartelería, presentaciones y trabajos escolares.",
+    "imagen": "/imagenes/libreria/afiche.jpeg"
+  },
+  {
+    "id": 27,
+    "seccion": "libreria",
+    "categoria": "papeles",
+    "nombre": "Cartulina Color",
+    "precio": 1000,
+    "descripcion": "Cartulina de color para manualidades, cartelería y proyectos creativos.",
+    "imagen": "/imagenes/libreria/cartulina-color.jpeg"
+  },
+  {
+    "id": 28,
+    "seccion": "libreria",
+    "categoria": "papeles",
+    "nombre": "Cartulina Blanca",
+    "precio": 800,
+    "descripcion": "Cartulina blanca para trabajos escolares, dibujo, cartelería y manualidades.",
+    "imagen": "/imagenes/libreria/cartulina-blanca.jpeg"
+  },
+
+  {
+    "id": 29,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión B/N A4",
+    "precio": 200,
+    "descripcion": "Impresión en blanco y negro, simple faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-byn-cerca.jpeg"
+  },
+  {
+    "id": 30,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión Color A4",
+    "precio": 500,
+    "descripcion": "Impresión a color, simple faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-color-cerca.jpeg"
+  },
+  {
+    "id": 31,
+    "seccion": "imprenta",
+    "categoria": "fotocopia",
+    "nombre": "Fotocopia B/N A4",
+    "precio": 200,
+    "descripcion": "Fotocopia en blanco y negro, simple faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-byn-cerca.jpeg"
+  },
+  {
+    "id": 32,
+    "seccion": "imprenta",
+    "categoria": "fotocopia",
+    "nombre": "Fotocopia Color A4",
+    "precio": 500,
+    "descripcion": "Fotocopia a color, simple faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-color-cerca.jpeg"
+  },
+  {
+    "id": 33,
+    "seccion": "imprenta",
+    "categoria": "digitalizacion",
+    "nombre": "Escaneo",
+    "precio": 100,
+    "descripcion": "Servicio de escaneo y digitalización de documentos.",
+    "gramos": null,
+    "tipoHoja": "-",
+    "imagen": "/imagenes/imprenta/escaneo.jpeg"
+  },
+  {
+    "id": 34,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión B/N A4 Doble Faz",
+    "precio": 300,
+    "descripcion": "Impresión en blanco y negro, doble faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-byn.jpeg"
+  },
+  {
+    "id": 35,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión Color A4 Doble Faz",
+    "precio": 800,
+    "descripcion": "Impresión a color, doble faz, sobre hoja normal tamaño A4.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal A4",
+    "imagen": "/imagenes/imprenta/A4-color.jpeg"
+  },
+  {
+    "id": 36,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión B/N Oficio",
+    "precio": 300,
+    "descripcion": "Impresión en blanco y negro, simple faz, sobre hoja tamaño oficio.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal Legal",
+    "imagen": "/imagenes/imprenta/oficio-byn-cerca.jpeg"
+  },
+  {
+    "id": 37,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión Color Oficio",
+    "precio": 800,
+    "descripcion": "Impresión a color, simple faz, sobre hoja tamaño oficio.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal Legal",
+    "imagen": "/imagenes/imprenta/oficio-color-cerca.jpeg"
+  },
+  {
+    "id": 38,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión B/N Oficio Doble Faz",
+    "precio": 500,
+    "descripcion": "Impresión en blanco y negro, doble faz, sobre hoja tamaño oficio.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal Legal",
+    "imagen": "/imagenes/imprenta/oficio-byn.jpeg"
+  },
+  {
+    "id": 39,
+    "seccion": "imprenta",
+    "categoria": "impresion",
+    "nombre": "Impresión Color Oficio Doble Faz",
+    "precio": 1400,
+    "descripcion": "Impresión a color, doble faz, sobre hoja tamaño oficio.",
+    "gramos": 75,
+    "tipoHoja": "Hoja normal Legal",
+    "imagen": "/imagenes/imprenta/oficio-color.jpeg"
+  },
+  {
+    "id": 40,
+    "seccion": "imprenta",
+    "categoria": "especial",
+    "nombre": "Impresión Color Sticker",
+    "precio": 2000,
+    "descripcion": "Impresión a color sobre papel fotográfico glossy autoadhesivo tamaño A4.",
+    "gramos": 130,
+    "tipoHoja": "Hoja fotográfica glossy A4",
+    "imagen": "/imagenes/imprenta/sticker-cerca.jpeg"
+  },
+  {
+    "id": 41,
+    "seccion": "imprenta",
+    "categoria": "especial",
+    "nombre": "Impresión Color Luster",
+    "precio": 3000,
+    "descripcion": "Impresión a color sobre papel fotográfico semimate Luster tamaño A4.",
+    "gramos": 260,
+    "tipoHoja": "Hoja fotográfica semimate A4",
+    "imagen": "/imagenes/imprenta/luster-cerca.jpeg"
+  },
+  {
+    "id": 42,
+    "seccion": "imprenta",
+    "categoria": "especial",
+    "nombre": "Impresión Color Opalina",
+    "precio": 1500,
+    "descripcion": "Impresión a color sobre papel opalina de terminación mate tamaño A4.",
+    "gramos": 240,
+    "tipoHoja": "Hoja mate A4",
+    "imagen": "/imagenes/imprenta/opalina-cerca.jpeg"
+  },
+  {
+    "id": 43,
+    "seccion": "imprenta",
+    "categoria": "especial",
+    "nombre": "Impresión Color Foto",
+    "precio": 1000,
+    "descripcion": "Impresión fotográfica a color sobre papel glossy tamaño A4.",
+    "gramos": 120,
+    "tipoHoja": "Hoja fotográfica glossy A4",
+    "imagen": ""
+  }
+]

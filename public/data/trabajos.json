@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "categoria": "folleto",
+    "titulo": "Folletos personalizados",
+    "imagen": "/imagenes/trabajos/folleto/folleto.jpeg"
+  },
+  {
+    "id": 2,
+    "categoria": "folleto",
+    "titulo": "Folletos personalizados",
+    "imagen": "/imagenes/trabajos/folleto/folleto (2).jpeg"
+  },
+  {
+    "id": 3,
+    "categoria": "folleto",
+    "titulo": "Folletos personalizados",
+    "imagen": "/imagenes/trabajos/folleto/folleto (3).jpeg"
+  },
+  {
+    "id": 4,
+    "categoria": "folleto",
+    "titulo": "Folletos personalizados",
+    "imagen": "/imagenes/trabajos/folleto/folleto (4).jpeg"
+  },
+  {
+    "id": 5,
+    "categoria": "impresion",
+    "titulo": "Trabajos de impresión",
+    "imagen": "/imagenes/trabajos/impresion/impresion.jpeg"
+  },
+  {
+    "id": 6,
+    "categoria": "impresion",
+    "titulo": "Trabajos de impresión",
+    "imagen": "/imagenes/trabajos/impresion/impresion (2).jpeg"
+  },
+  {
+    "id": 7,
+    "categoria": "sticker",
+    "titulo": "Stickers personalizados",
+    "imagen": "/imagenes/trabajos/sticker/sticker.jpg"
+  },
+  {
+    "id": 8,
+    "categoria": "libro",
+    "titulo": "Libros personalizados",
+    "imagen": "/imagenes/trabajos/libro/libro.jpeg"
+  },
+  {
+    "id": 9,
+    "categoria": "libro",
+    "titulo": "Libros personalizados",
+    "imagen": "/imagenes/trabajos/libro/libro (2).jpeg"
+  },
+  {
+    "id": 10,
+    "categoria": "libro",
+    "titulo": "Libros personalizados",
+    "imagen": "/imagenes/trabajos/libro/libro (3).jpeg"
+  },
+  {
+    "id": 11,
+    "categoria": "separadores",
+    "titulo": "Separadores personalizados",
+    "imagen": "/imagenes/trabajos/separadores/separador.jpeg"
+  },
+  {
+    "id": 12,
+    "categoria": "sticker",
+    "titulo": "Stickers personalizados",
+    "imagen": "/imagenes/trabajos/sticker/sticker.jpeg"
+  },
+  {
+    "id": 13,
+    "categoria": "sticker",
+    "titulo": "Stickers personalizados",
+    "imagen": "/imagenes/trabajos/sticker/sticker (2).jpeg"
+  },
+  {
+    "id": 14,
+    "categoria": "tarjetaPresentacion",
+    "titulo": "Tarjetas de presentación",
+    "imagen": "/imagenes/trabajos/tarjetaPresentacion/tarjeta-presentacion.jpeg"
+  }
+]
