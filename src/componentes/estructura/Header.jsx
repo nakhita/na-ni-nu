@@ -1,14 +1,16 @@
+import { Link } from "react-router-dom"
 import Nav from "./Nav"
+import Buscador from "../productos/Buscador"
 
 function Header() {
   return (
     <header className="header">
       <div className="headerContenido">
 
-        <div className="marca">
+        <Link to="/" className="marca">
           <img
             src="/imagenes/logo/na-ni-nu.png"
-            alt="Logo Na-Ni-Mu"
+            alt="Logo Na-Ni-Nu"
             className="logoMarca"
           />
 
@@ -25,7 +27,9 @@ function Header() {
               Todo lo que necesitas en un solo lugar
             </p>
           </div>
-        </div>
+        </Link>
+
+        <Buscador />
 
         <Nav />
       </div>

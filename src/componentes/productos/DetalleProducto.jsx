@@ -1,6 +1,7 @@
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import CarritoContexto from "../../contexto/CarritoContexto"
+import { useCarrito } from "../../hooks/useCarrito"
+import { obtenerProductoPorId } from "../../servicios/productosServicio"
 
 function DetalleProducto() {
   const { id } = useParams()
@@ -11,34 +12,36 @@ function DetalleProducto() {
     aumentarCantidad,
     disminuirCantidad,
     eliminarDelCarrito
-  } = useContext(CarritoContexto)
+  } = useCarrito()
 
   const [producto, setProducto] = useState(null)
   const [cargando, setCargando] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch("/data/productos.json")
-      .then((respuesta) => {
-        if (!respuesta.ok) {
-          throw new Error("No se pudo cargar el producto")
-        }
+    let activo = true
 
-        return respuesta.json()
-      })
+    obtenerProductoPorId(id)
       .then((datos) => {
-        const productoEncontrado = datos.find(
-          (producto) => producto.id === Number(id)
-        )
-
-        setProducto(productoEncontrado)
+        if (activo) {
+          setProducto(datos)
+          setError(null)
+        }
       })
-      .catch((error) => {
-        setError(error.message)
+      .catch((err) => {
+        if (activo) {
+          setError(err.message || "Error al cargar el producto")
+        }
       })
       .finally(() => {
-        setCargando(false)
+        if (activo) {
+          setCargando(false)
+        }
       })
+
+    return () => {
+      activo = false
+    }
   }, [id])
 
   if (cargando) {
@@ -54,7 +57,7 @@ function DetalleProducto() {
   }
 
   const productoEnCarrito = carrito.find(
-    (item) => item.id === producto.id
+    (item) => String(item.id) === String(producto.id)
   )
 
   const cantidad = productoEnCarrito

@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState } from "react"
-import CarritoContexto from "../../contexto/CarritoContexto"
+import { useEffect, useState } from "react"
+import { useCarrito } from "../../hooks/useCarrito"
 
 function Carrito() {
   const {
@@ -7,8 +7,9 @@ function Carrito() {
     aumentarCantidad,
     disminuirCantidad,
     eliminarDelCarrito,
-    restaurarProducto
-  } = useContext(CarritoContexto)
+    restaurarProducto,
+    vaciarCarrito
+  } = useCarrito()
 
   const [productoEliminado, setProductoEliminado] = useState(null)
   const [posicionEliminada, setPosicionEliminada] = useState(null)
@@ -36,14 +37,20 @@ function Carrito() {
   }, [mostrarAviso])
 
   const estaSeleccionado = (id) => {
-    return !productosNoSeleccionados.includes(id)
+    return !productosNoSeleccionados.some(
+      (productoId) => String(productoId) === String(id)
+    )
   }
 
   const manejarSeleccion = (id) => {
     setProductosNoSeleccionados((actuales) => {
-      if (actuales.includes(id)) {
+      const existe = actuales.some(
+        (productoId) => String(productoId) === String(id)
+      )
+
+      if (existe) {
         return actuales.filter(
-          (productoId) => productoId !== id
+          (productoId) => String(productoId) !== String(id)
         )
       }
 
@@ -80,12 +87,28 @@ function Carrito() {
 
     setProductosNoSeleccionados((actuales) =>
       actuales.filter(
-        (productoId) => productoId !== producto.id
+        (productoId) => String(productoId) !== String(producto.id)
       )
     )
 
     eliminarDelCarrito(producto.id)
     setMostrarAviso(true)
+  }
+
+  const manejarVaciarCarrito = () => {
+    const confirmar = window.confirm(
+      "¿Estás seguro de que deseas vaciar todos los productos del carrito?"
+    )
+
+    if (!confirmar) {
+      return
+    }
+
+    vaciarCarrito()
+    setProductosNoSeleccionados([])
+    setMostrarAviso(false)
+    setProductoEliminado(null)
+    setPosicionEliminada(null)
   }
 
   const manejarDeshacer = () => {
@@ -151,8 +174,17 @@ function Carrito() {
                 onChange={seleccionarTodos}
               />
 
-              <span>Todos los productos</span>
+              <span>Todos los productos ({carrito.length})</span>
             </label>
+
+            <button
+              type="button"
+              className="botonVaciarCarrito"
+              onClick={manejarVaciarCarrito}
+              title="Vaciar todo el carrito"
+            >
+              🗑️ Vaciar carrito
+            </button>
           </div>
 
           <div className="carritoDistribucion">

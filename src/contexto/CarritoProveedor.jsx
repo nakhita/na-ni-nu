@@ -7,12 +7,12 @@ function CarritoProveedor({ children }) {
   const agregarAlCarrito = (producto) => {
     setCarrito((carritoActual) => {
       const productoExistente = carritoActual.find(
-        (item) => item.id === producto.id
+        (item) => String(item.id) === String(producto.id)
       )
 
       if (productoExistente) {
         return carritoActual.map((item) =>
-          item.id === producto.id
+          String(item.id) === String(producto.id)
             ? { ...item, cantidad: item.cantidad + 1 }
             : item
         )
@@ -31,7 +31,7 @@ function CarritoProveedor({ children }) {
   const aumentarCantidad = (id) => {
     setCarrito((carritoActual) =>
       carritoActual.map((item) =>
-        item.id === id
+        String(item.id) === String(id)
           ? { ...item, cantidad: item.cantidad + 1 }
           : item
       )
@@ -41,7 +41,7 @@ function CarritoProveedor({ children }) {
   const disminuirCantidad = (id) => {
     setCarrito((carritoActual) =>
       carritoActual.map((item) =>
-        item.id === id && item.cantidad > 1
+        String(item.id) === String(id) && item.cantidad > 1
           ? { ...item, cantidad: item.cantidad - 1 }
           : item
       )
@@ -50,14 +50,14 @@ function CarritoProveedor({ children }) {
 
   const eliminarDelCarrito = (id) => {
     setCarrito((carritoActual) =>
-      carritoActual.filter((item) => item.id !== id)
+      carritoActual.filter((item) => String(item.id) !== String(id))
     )
   }
 
   const restaurarProducto = (producto, posicion) => {
     setCarrito((carritoActual) => {
       const productoExistente = carritoActual.find(
-        (item) => item.id === producto.id
+        (item) => String(item.id) === String(producto.id)
       )
 
       if (productoExistente) {
@@ -72,6 +72,10 @@ function CarritoProveedor({ children }) {
     })
   }
 
+  const vaciarCarrito = () => {
+    setCarrito([])
+  }
+
   return (
     <CarritoContexto.Provider
       value={{
@@ -80,7 +84,8 @@ function CarritoProveedor({ children }) {
         aumentarCantidad,
         disminuirCantidad,
         eliminarDelCarrito,
-        restaurarProducto
+        restaurarProducto,
+        vaciarCarrito
       }}
     >
       {children}

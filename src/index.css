@@ -432,12 +432,38 @@ button {
   width: 100%;
 
   margin-bottom: 16px;
-  padding: 16px 20px;
+  padding: 14px 20px;
 
   background-color: #ffffff;
 
   border: 1px solid #e5e5e5;
   border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.botonVaciarCarrito {
+  background: transparent;
+  border: 1px solid #ff4d4f;
+  color: #cf1322;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.botonVaciarCarrito:hover {
+  background-color: #fff1f0;
+  border-color: #cf1322;
 }
 
 .barraSeleccion label {
@@ -1534,4 +1560,638 @@ button {
   .opcionCompra span {
     font-size: 23px;
   }
+}
+
+
+/* ==========================================
+   AUTENTICACIÓN Y ROLES
+========================================== */
+
+.enlaceAdminNav {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  color: #389e0d;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.enlaceAdminNav:hover {
+  background-color: #d9f7be;
+}
+
+.usuarioNav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #555555;
+}
+
+.emailUsuarioNav {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.botonCerrarSesionNav {
+  background: none;
+  border: 1px solid #d9d9d9;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666666;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botonCerrarSesionNav:hover {
+  border-color: #ff4d4f;
+  color: #ff4d4f;
+  background-color: #fff1f0;
+}
+
+.enlaceLoginNav {
+  background-color: #111111;
+  color: #ffffff !important;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.enlaceLoginNav:hover {
+  background-color: #333333;
+}
+
+.contenedorAuth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.tarjetaAuth {
+  width: 100%;
+  max-width: 440px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.tarjetaAuth h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+  color: #111111;
+}
+
+.subtituloAuth {
+  color: #666666;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.alertaErrorAuth {
+  background-color: #fff1f0;
+  border: 1px solid #ffa39e;
+  color: #cf1322;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.formularioAuth {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.grupoFormulario {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.grupoFormulario label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.grupoFormulario input,
+.grupoFormulario select,
+.grupoFormulario textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+}
+
+.grupoFormulario input:focus,
+.grupoFormulario select:focus,
+.grupoFormulario textarea:focus {
+  outline: none;
+  border-color: #111111;
+}
+
+.botonAuth {
+  margin-top: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #111111;
+  color: #ffffff;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.botonAuth:hover {
+  background-color: #333333;
+}
+
+.credencialesAcademicas {
+  margin-top: 24px;
+  padding: 14px;
+  background-color: #f9f9f9;
+  border: 1px dashed #cccccc;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.credencialesAcademicas code {
+  display: block;
+  margin: 6px 0 10px;
+  background-color: #eeeeee;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.botonAutocompletar {
+  background-color: #ffffff;
+  border: 1px solid #111111;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botonAutocompletar:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.pieAuth {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.pieAuth a {
+  color: #111111;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.accesoDenegado {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.accesoDenegado h2 {
+  font-size: 28px;
+  color: #cf1322;
+  margin-bottom: 12px;
+}
+
+.contenedorCargandoProtegida {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 16px;
+  color: #666666;
+}
+
+
+/* ==========================================
+   PANEL ADMINISTRATIVO Y CRUD
+========================================== */
+
+.panelAdminPagina {
+  width: 100%;
+}
+
+.encabezadoPanelAdmin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.subtituloPanelAdmin {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.alertaExitoAdmin {
+  background-color: #f6ffed;
+  border: 1px solid #b7eb8f;
+  color: #274916;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.alertaErrorAdmin {
+  background-color: #fff1f0;
+  border: 1px solid #ffa39e;
+  color: #cf1322;
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.contenedorFormularioAdmin {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contenedorFormularioAdmin h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #111111;
+}
+
+.formularioProductoAdmin {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.filaFormularioDoble {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contenedorCamposImprenta {
+  background-color: #fcfcfc;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px dashed #d9d9d9;
+}
+
+.mensajeErrorCampo {
+  color: #cf1322;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.accionesFormularioAdmin {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.tablaAdminContenedor {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.tablaAdmin {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tablaAdmin th {
+  background-color: #fafafa;
+  padding: 14px 16px;
+  font-weight: 600;
+  color: #333333;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.tablaAdmin td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: middle;
+}
+
+.tablaAdmin tr:hover {
+  background-color: #fbfbfb;
+}
+
+.celdaImagenAdmin {
+  width: 60px;
+}
+
+.miniaturaAdmin {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eeeeee;
+}
+
+.miniaturaPlaceholder {
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #999999;
+  border-radius: 6px;
+}
+
+.celdaNombreAdmin {
+  max-width: 240px;
+}
+
+.idProductoAdmin {
+  display: block;
+  font-size: 11px;
+  color: #888888;
+  font-family: monospace;
+}
+
+.badgeAdminSeccion {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badgeAdminSeccion.libreria {
+  background-color: #e6f7ff;
+  color: #096dd9;
+  border: 1px solid #91d5ff;
+}
+
+.badgeAdminSeccion.imprenta {
+  background-color: #f9f0ff;
+  color: #531dab;
+  border: 1px solid #d3adf7;
+}
+
+.celdaPrecioAdmin {
+  font-weight: 700;
+  color: #111111;
+}
+
+.celdaDetallesAdmin {
+  font-size: 13px;
+  color: #666666;
+}
+
+.celdaAccionesAdmin {
+  white-space: nowrap;
+}
+
+.botonAccionEditar {
+  background: none;
+  border: 1px solid #91d5ff;
+  color: #096dd9;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: all 0.2s ease;
+}
+
+.botonAccionEditar:hover {
+  background-color: #e6f7ff;
+}
+
+.botonAccionEliminar {
+  background: none;
+  border: 1px solid #ffa39e;
+  color: #cf1322;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.botonAccionEliminar:hover {
+  background-color: #fff1f0;
+}
+
+.cargandoAdmin,
+.vacioAdmin {
+  text-align: center;
+  padding: 40px;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .filaFormularioDoble {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ==========================================
+   BUSCADOR EN TIEMPO REAL
+========================================== */
+
+.buscadorContenedor {
+  flex: 1;
+  max-width: 460px;
+  margin: 0 16px;
+}
+
+.buscadorInputEnvoltorio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.iconoBuscador {
+  position: absolute;
+  left: 12px;
+  font-size: 14px;
+  color: #888888;
+  pointer-events: none;
+}
+
+.inputBuscador {
+  width: 100%;
+  padding: 10px 38px 10px 36px;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+/* Ocultar el botón de cancelación nativo del navegador en inputs type="search" */
+.inputBuscador::-webkit-search-cancel-button,
+.inputBuscador::-webkit-search-decoration,
+.inputBuscador::-webkit-search-results-button,
+.inputBuscador::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+.inputBuscador::-ms-clear,
+.inputBuscador::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.inputBuscador:focus {
+  outline: none;
+  background-color: #ffffff;
+  border-color: #111111;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+.botonLimpiarBuscador {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #888888;
+  cursor: pointer;
+  padding: 2px 4px;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.botonLimpiarBuscador:hover {
+  color: #111111;
+  background-color: #e5e5e5;
+}
+
+.resumenBusquedaTexto {
+  font-size: 14px;
+  color: #555555;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .headerContenido {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .buscadorContenedor {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+
+/* ==========================================
+   PAGINACIÓN
+========================================== */
+
+.paginadorContenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 40px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+
+.numerosPaginaContenedor {
+  display: flex;
+  gap: 6px;
+}
+
+.botonPaginador {
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botonControlPagina {
+  padding: 8px 14px;
+}
+
+.botonControlPagina:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #eeeeee;
+}
+
+.botonControlPagina:not(:disabled):hover {
+  border-color: #111111;
+  background-color: #f5f5f5;
+}
+
+.botonPaginaNumero {
+  width: 36px;
+  height: 36px;
+}
+
+.botonPaginaNumero:hover {
+  border-color: #111111;
+}
+
+.botonPaginaNumero.paginaActiva {
+  background-color: #111111;
+  border-color: #111111;
+  color: #ffffff;
+  font-weight: 700;
 }

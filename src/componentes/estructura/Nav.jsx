@@ -1,9 +1,10 @@
-import { useContext } from "react"
 import { Link } from "react-router-dom"
-import CarritoContexto from "../../contexto/CarritoContexto"
+import { useCarrito } from "../../hooks/useCarrito"
+import { useAuth } from "../../hooks/useAuth"
 
 function Nav() {
-  const { carrito } = useContext(CarritoContexto)
+  const { carrito } = useCarrito()
+  const { usuario, esAdmin, cerrarSesion } = useAuth()
 
   const cantidadTotal = carrito.reduce(
     (acumulador, producto) =>
@@ -18,13 +19,39 @@ function Nav() {
       <Link to="/imprenta">Imprenta</Link>
 
       <Link to="/carrito" className="enlaceCarrito">
-        🛒 
+        🛒
         {cantidadTotal > 0 && (
           <span className="contadorCarrito">
             {cantidadTotal}
           </span>
         )}
       </Link>
+
+      {esAdmin && (
+        <Link to="/admin" className="enlaceAdminNav">
+          ⚙️ Admin
+        </Link>
+      )}
+
+      {usuario ? (
+        <div className="usuarioNav">
+          <span className="emailUsuarioNav" title={usuario.email}>
+            👤 {usuario.email.split("@")[0]}
+          </span>
+          <button
+            type="button"
+            onClick={cerrarSesion}
+            className="botonCerrarSesionNav"
+            title="Cerrar sesión"
+          >
+            Salir
+          </button>
+        </div>
+      ) : (
+        <Link to="/login" className="enlaceLoginNav">
+          Ingresar
+        </Link>
+      )}
     </nav>
   )
 }

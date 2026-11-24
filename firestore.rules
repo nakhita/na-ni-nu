@@ -1,0 +1,27 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Verificar si el usuario es administrador.
+    function esAdmin() {
+      return request.auth != null &&
+        exists(/databases/$(database)/documents/usuarios/$(request.auth.uid)) &&
+        get(/databases/$(database)/documents/usuarios/$(request.auth.uid)).data.rol == "admin";
+    }
+
+    // Colección de productos.
+    match /productos/{productoId} {
+      allow read: if true;
+      allow create, update, delete: if esAdmin();
+    }
+
+    // Colección de usuarios.
+    match /usuarios/{userId} {
+      allow read: if request.auth != null && (request.auth.uid == userId || esAdmin());
+      allow create: if request.auth != null && request.auth.uid == userId && request.resource.data.rol == "usuario";
+      allow update: if request.auth != null && request.auth.uid == userId && request.resource.data.rol == resource.data.rol;
+      allow delete: if esAdmin();
+    }
+  }
+}

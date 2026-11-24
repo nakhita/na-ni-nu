@@ -1,6 +1,5 @@
-import { useContext } from "react"
 import { Link } from "react-router-dom"
-import CarritoContexto from "../../contexto/CarritoContexto"
+import { useCarrito } from "../../hooks/useCarrito"
 
 function Item({ producto }) {
   const {
@@ -9,7 +8,7 @@ function Item({ producto }) {
     aumentarCantidad,
     disminuirCantidad,
     eliminarDelCarrito
-  } = useContext(CarritoContexto)
+  } = useCarrito()
 
   const {
     id,
@@ -23,7 +22,7 @@ function Item({ producto }) {
   } = producto
 
   const productoEnCarrito = carrito.find(
-    (item) => item.id === id
+    (item) => String(item.id) === String(id)
   )
 
   const cantidad = productoEnCarrito
